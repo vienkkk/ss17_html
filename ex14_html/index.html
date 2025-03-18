@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+        let radius = parseFloat(prompt("Nhập vào bán kính (r):")); 
+        let height = parseFloat(prompt("Nhập vào chiều cao (h):"));
+        const PI = Math.PI;
+        let lateralArea = 2 * PI * radius * height;
+        console.log(`Diện tích xung quanh hình trụ là: ${lateralArea.toFixed(2)} đơn vị vuông`);
+        let totalArea = 2 * PI * radius * (radius + height);
+        console.log(`Diện tích toàn phần hình trụ là: ${totalArea.toFixed(2)} đơn vị vuông`);
+        let volume = PI * Math.pow(radius, 2) * height;
+        console.log(`Thể tích hình trụ là: ${volume.toFixed(2)} đơn vị khối`);
+        let baseCircumference = 2 * PI * radius;
+        console.log(`Chu vi đáy hình trụ là: ${baseCircumference.toFixed(2)} đơn vị`);  
+    </script>
+</body>
+
+</html>

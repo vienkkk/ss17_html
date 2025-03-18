@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> 
+        let radius = parseFloat(prompt("Nhập vào bán kính hình cầu (r):"));
+        const PI = Math.PI;
+        let volume = (4 / 3) * PI * Math.pow(radius, 3);
+        console.log(`Thể tích hình cầu là: ${volume.toFixed(2)} đơn vị khối`);
+        let surfaceArea = 4 * PI * Math.pow(radius, 2);
+        console.log(`Diện tích bề mặt hình cầu là: ${surfaceArea.toFixed(2)} đơn vị vuông`);
+        let maximumCircumference = 2 * PI * radius;
+        console.log(`Chu vi lớn nhất của hình cầu là: ${maximumCircumference.toFixed(2)} đơn vị`);  
+    </script>
+</body>
+
+</html>

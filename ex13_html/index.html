@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateInterest(principal, rate, time) {
+            return principal * rate * time; // Tính lãi  
+        }
+        let principal = parseFloat(prompt("Nhập số tiền gửi (VNĐ):")); 
+        let months = parseInt(prompt("Nhập số tháng gửi:"));
+        let time = months / 12;
+        let rate = 0.043; 
+        let interest = calculateInterest(principal, rate, time);
+        document.write(`Số tiền lãi bạn nhận được là: ${interest.toFixed(2)} VNĐ`);  
+    </script>
+</body>
+
+</html>
